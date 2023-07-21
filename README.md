@@ -4,6 +4,7 @@ Under continuous development...
 
 ## PlateDialog
 ### images
+![](images/demo_plate_provinces_keyboard.png) ![](images/demo_plate_letter_keyboard.png)
 
 Step 1：Add it in your root build.gradle or setting.gradle at the end of repositories:
 ```gradle
