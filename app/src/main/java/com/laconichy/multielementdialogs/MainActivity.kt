@@ -29,14 +29,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showPlateDialog() {
-        PlateDialog(this).apply {
-            setData("川")
+        // example 1
+        PlateDialog(this).show {
+            setData("川A88888")
             setOnConfirmClickListener { dialog, data ->
                 Toast.makeText(this@MainActivity, data, Toast.LENGTH_SHORT).show()
             }
-        }.show()
+        }
 
-        val a = PlateDialog(this)
+        // example 2
+//        PlateDialog(this).apply {
+//            setData("川A88888")
+//            setOnConfirmClickListener { dialog, data ->
+//                Toast.makeText(this@MainActivity, data, Toast.LENGTH_SHORT).show()
+//            }
+//        }.show()
     }
 
 }
