@@ -3,9 +3,6 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
-group = "com.laconichy.multielementdialogs"
-version = "1.0.0"
-
 android {
     namespace 'com.laconichy.dialog'
     compileSdk rootProject.ext.android.compileSdk
