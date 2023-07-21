@@ -32,16 +32,16 @@ class MainActivity : AppCompatActivity() {
         // example 1
         PlateDialog(this).show {
             setData("川A88888")
-            setOnConfirmClickListener { dialog, data ->
-                Toast.makeText(this@MainActivity, data, Toast.LENGTH_SHORT).show()
+            setOnConfirmClickListener {
+                Toast.makeText(this@MainActivity, it, Toast.LENGTH_SHORT).show()
             }
         }
 
         // example 2
 //        PlateDialog(this).apply {
 //            setData("川A88888")
-//            setOnConfirmClickListener { dialog, data ->
-//                Toast.makeText(this@MainActivity, data, Toast.LENGTH_SHORT).show()
+//            setOnConfirmClickListener {
+//                Toast.makeText(this@MainActivity, it, Toast.LENGTH_SHORT).show()
 //            }
 //        }.show()
     }

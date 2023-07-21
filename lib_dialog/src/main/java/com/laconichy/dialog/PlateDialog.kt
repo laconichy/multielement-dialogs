@@ -137,7 +137,7 @@ class PlateDialog(
 
         tv_confirm.setOnClickListener {
             if (isPassValid()) {
-                onConfirmClickListener?.invoke(this@PlateDialog, getContentText())
+                onConfirmClickListener?.invoke(getContentText())
                 dismiss()
             } else {
                 Toast.makeText(context, "请输入正确的车牌号", Toast.LENGTH_SHORT).show()
@@ -457,8 +457,8 @@ class PlateDialog(
      */
     fun getData() = getContentText()
 
-    private var onConfirmClickListener: ((dialog: PlateDialog, data: String) -> Unit)? = null
-    fun setOnConfirmClickListener(listener: (dialog: PlateDialog, data: String) -> Unit): PlateDialog {
+    private var onConfirmClickListener: ((data: String) -> Unit)? = null
+    fun setOnConfirmClickListener(listener: (data: String) -> Unit): PlateDialog {
         onConfirmClickListener = listener
         return this
     }
