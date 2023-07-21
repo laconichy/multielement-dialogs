@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_gravity="center"
+            android:background="@drawable/ld_shape_all_12_white"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dp_6"
+            android:paddingEnd="@dimen/dp_6">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_12"
+                android:drawablePadding="@dimen/dp_4"
+                android:gravity="center_horizontal"
+                android:text="请输入车牌号"
+                android:textColor="?android:attr/colorPrimary"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginEnd="@dimen/dp_2"
+                    android:background="@drawable/ld_selector_all_2_1_theme_selected"
+                    android:textColor="@color/ld_colorText"
+                    android:textSize="@dimen/sp_14"
+                    android:gravity="center"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/tv2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginEnd="@dimen/dp_2"
+                    android:background="@drawable/ld_selector_all_2_1_theme_selected"
+                    android:textColor="@color/ld_colorText"
+                    android:textSize="@dimen/sp_14"
+                    android:gravity="center"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintLeft_toRightOf="@id/tv1"
+                    app:layout_constraintRight_toLeftOf="@+id/tv3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginEnd="@dimen/dp_2"
+                    android:background="@drawable/ld_selector_all_2_1_theme_selected"
+                    android:textColor="@color/ld_colorText"
+                    android:textSize="@dimen/sp_14"
+                    android:gravity="center"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintLeft_toRightOf="@id/tv2"
+                    app:layout_constraintRight_toLeftOf="@+id/tv4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginEnd="@dimen/dp_2"
+                    android:background="@drawable/ld_selector_all_2_1_theme_selected"
+                    android:textColor="@color/ld_colorText"
+                    android:textSize="@dimen/sp_14"
+                    android:gravity="center"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintLeft_toRightOf="@id/tv3"
+                    app:layout_constraintRight_toLeftOf="@+id/tv5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginEnd="@dimen/dp_2"
+                    android:background="@drawable/ld_selector_all_2_1_theme_selected"
+                    android:textColor="@color/ld_colorText"
+                    android:textSize="@dimen/sp_14"
+                    android:gravity="center"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintLeft_toRightOf="@id/tv4"
+                    app:layout_constraintRight_toLeftOf="@+id/tv6"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginEnd="@dimen/dp_2"
+                    android:background="@drawable/ld_selector_all_2_1_theme_selected"
+                    android:textColor="@color/ld_colorText"
+                    android:textSize="@dimen/sp_14"
+                    android:gravity="center"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintLeft_toRightOf="@id/tv5"
+                    app:layout_constraintRight_toLeftOf="@+id/tv7"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginEnd="@dimen/dp_2"
+                    android:background="@drawable/ld_selector_all_2_1_theme_selected"
+                    android:textColor="@color/ld_colorText"
+                    android:textSize="@dimen/sp_14"
+                    android:gravity="center"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintLeft_toRightOf="@id/tv6"
+                    app:layout_constraintRight_toLeftOf="@+id/tv8"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginEnd="@dimen/dp_2"
+                    android:background="@drawable/ld_selector_all_2_1_theme_selected"
+                    android:textColor="@color/ld_colorText"
+                    android:textSize="@dimen/sp_14"
+                    android:gravity="center"
+                    android:hint="新"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintLeft_toRightOf="@id/tv7"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_12"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp_11"
+                    android:paddingBottom="@dimen/dp_11"
+                    android:text="取消"
+                    android:textColor="@color/ld_colorText"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/tv_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="确定"
+                    android:textColor="?android:attr/colorPrimary"
+                    android:textSize="@dimen/sp_15" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_provinces_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ld_colorBlock"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/ll_letter_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ld_colorBlock"
+        android:orientation="vertical" />
+
+</LinearLayout>

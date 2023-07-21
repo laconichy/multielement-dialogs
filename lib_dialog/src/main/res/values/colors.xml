@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ld_colorWhite">#FFFFFF</color>
+
+    <color name="ld_colorText">#2F313D</color>
+    <color name="ld_colorDDDFE7">#DDDFE7</color>
+    <color name="ld_colorBlock">#F2F2F4</color>
+</resources>

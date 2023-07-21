@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ld_DialogRightStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+<!--        <item name="android:windowAnimationStyle">@style/DialogRightAnim</item>-->
+    </style>
+
+    <style name="ld_DialogNormalStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+<!--        <item name="android:windowAnimationStyle">@style/DialogNormalAnim</item>-->
+    </style>
+
+<!--    <style name="DialogBottomAnim" parent="@android:style/Animation.Dialog">-->
+<!--        <item name="android:windowEnterAnimation">@anim/dialog_bottom_in</item>-->
+<!--        <item name="android:windowExitAnimation">@anim/dialog_bottom_out</item>-->
+<!--    </style>-->
+
+</resources>
