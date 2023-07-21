@@ -2,10 +2,26 @@
 Direct to use, multiple, smooth, can be applied to Kotlin &amp; Android.
 Under continuous development...
 
-# PlateDialog
-## images
+## PlateDialog
+### images
 
-## use example 1
+Step 1：Add it in your root build.gradle or setting.gradle at the end of repositories:
+```gradle
+    allprojects {
+    	repositories {
+    		...
+    		maven { url 'https://jitpack.io' }
+    	}
+    }
+```
+Step 2. Add the dependency
+```gradle
+    dependencies {
+	    implementation 'com.github.laconichy:multielement-dialogs:1.0.0'
+	}
+```
+
+### use example 1
 ```gradle
     PlateDialog(this).show {
         setData("川A88888")
@@ -15,7 +31,7 @@ Under continuous development...
     }
 ```
 
-## use example 2
+### use example 2
 ```gradle
     PlateDialog(this).apply {
         setData("川A88888")
