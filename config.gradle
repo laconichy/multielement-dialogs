@@ -1,6 +1,6 @@
 ext {
     android = [
-            applicationId : 'com.laconichy.android',
+            applicationId : 'com.laconichy.multielementdialogs',
             compileSdk    : 33,
             minSdk        : 21,
             targetSdk     : 33,
@@ -14,11 +14,5 @@ ext {
             'appcompat'             : 'androidx.appcompat:appcompat:1.4.1',
             'material'              : 'com.google.android.material:material:1.5.0',
             'constraintlayout'      : 'androidx.constraintlayout:constraintlayout:2.1.3',
-            'junit'                 : 'junit:junit:4.13.2',
-            'ext:junit'             : 'androidx.test.ext:junit:1.1.3',
-            'espresso-core'         : 'androidx.test.espresso:espresso-core:3.4.0',
-            'retrofit2'             : 'com.squareup.retrofit2:retrofit:2.9.0',
-            'converter-gson'        : 'com.squareup.retrofit2:converter-gson:2.9.0',
-            'logging-interceptor'   : 'com.squareup.okhttp3:logging-interceptor:4.11.0'
     ]
 }
