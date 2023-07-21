@@ -153,6 +153,7 @@
                     android:layout_marginEnd="@dimen/dp_2"
                     android:background="@drawable/ld_selector_all_2_1_theme_selected"
                     android:textColor="@color/ld_colorText"
+                    android:textColorHint="@color/ld_colorText3"
                     android:textSize="@dimen/sp_14"
                     android:gravity="center"
                     android:hint="新"

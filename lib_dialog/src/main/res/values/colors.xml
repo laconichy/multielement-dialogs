@@ -3,6 +3,7 @@
     <color name="ld_colorWhite">#FFFFFF</color>
 
     <color name="ld_colorText">#2F313D</color>
+    <color name="ld_colorText3">#BFC0C8</color>
     <color name="ld_colorDDDFE7">#DDDFE7</color>
     <color name="ld_colorBlock">#F2F2F4</color>
 </resources>

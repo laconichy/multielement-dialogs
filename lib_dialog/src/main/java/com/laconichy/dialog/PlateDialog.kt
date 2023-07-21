@@ -311,7 +311,7 @@ class PlateDialog(
                 if ("delete" == item) {
                     val imageButton = ImageButton(context)
                     imageButton.tag = j
-                    lp2 = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+                    lp2 = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT, 1f)
                     imageButton.setBackgroundResource(R.drawable.ld_selector_big_keyboard)
                     imageButton.setImageResource(R.drawable.ld_keyboard_del)
                     imageButton.layoutParams = lp2
@@ -323,7 +323,7 @@ class PlateDialog(
                     val textView = newTextView()
                     textView.tag = j
                     if ("ABC" == item) {
-                        lp2 = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+                        lp2 = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT, 1f)
                         textView.setBackgroundResource(R.drawable.ld_selector_big_keyboard)
                     } else {
                         lp2 = LinearLayout.LayoutParams(textViewWidth, (textViewWidth * 1.5).toInt())
@@ -361,7 +361,7 @@ class PlateDialog(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT)
             if (i == 0) {
-                lp1.setMargins(startPadding, spaceWidth, startPadding, spaceWidth * 2)
+                lp1.setMargins(startPadding, spaceWidth, startPadding, spaceWidth)
             }  else if (i == letters.size - 1) {
                 lp1.setMargins(startPadding, 0, startPadding, spaceWidth * 3)
             } else {
@@ -377,7 +377,7 @@ class PlateDialog(
                 if ("delete" == item) {
                     val imageButton = ImageButton(context)
                     imageButton.tag = j
-                    lp2 = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+                    lp2 = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT, 1f)
                     imageButton.setBackgroundResource(R.drawable.ld_selector_big_keyboard)
                     imageButton.setImageResource(R.drawable.ld_keyboard_del)
                     imageButton.layoutParams = lp2
@@ -389,7 +389,7 @@ class PlateDialog(
                     val textView = newTextView()
                     textView.tag = j
                     if ("省份" == item) {
-                        lp2 = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+                        lp2 = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT, 1f)
                         textView.setBackgroundResource(R.drawable.ld_selector_big_keyboard)
                     } else {
                         lp2 = LinearLayout.LayoutParams(textViewWidth, (textViewWidth * 1.5).toInt())
