@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
-import com.laconichy.dialog.PlateDialog
+import com.laconichy.dialog.dialog.PlateDialog
 
 class MainActivity : AppCompatActivity() {
 

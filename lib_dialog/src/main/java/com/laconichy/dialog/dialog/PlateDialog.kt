@@ -1,7 +1,5 @@
-package com.laconichy.dialog
+package com.laconichy.dialog.dialog
 
-import android.app.Dialog
-import android.content.ComponentCallbacks
 import android.content.Context
 import android.content.res.Resources
 import android.graphics.Point
@@ -16,18 +14,19 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import com.laconichy.dialog.R
 
 /**
  * <pre>
  *   author：laconichy
  *   time：2023/7/20
- *   desc：
+ *   desc：PlateDialog
  * </pre>
  */
 class PlateDialog(
     context: Context,
     themeResId: Int = R.style.ld_DialogNormalStyle
-) : Dialog(context, themeResId) {
+) : LDBaseDialog(context, themeResId) {
 
     private lateinit var tv1: TextView
     private lateinit var tv2: TextView
