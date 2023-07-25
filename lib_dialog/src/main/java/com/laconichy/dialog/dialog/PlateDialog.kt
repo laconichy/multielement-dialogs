@@ -2,19 +2,17 @@ package com.laconichy.dialog.dialog
 
 import android.content.Context
 import android.content.res.Resources
-import android.graphics.Point
-import android.os.Build
 import android.text.TextUtils
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowManager
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.laconichy.dialog.R
+import com.laconichy.dialog.extension.getScreenWidthAndHeight
 
 /**
  * <pre>
@@ -149,8 +147,9 @@ class PlateDialog(
      */
     private fun setWindowManager() {
         window?.let {
+            val (width, _) = it.context.getScreenWidthAndHeight()
             val lp = it.attributes
-            lp.width = getScreenWidth()
+            lp.width = width
             lp.height = ViewGroup.LayoutParams.MATCH_PARENT
             lp.gravity = Gravity.CENTER
             it.attributes = lp
@@ -282,7 +281,7 @@ class PlateDialog(
      * Keyboard with Chinese provinces
      */
     private fun provinceKeyboard() {
-        val width = getScreenWidth()
+        val (width, _) = context.getScreenWidthAndHeight()
         val spaceWidth = dp2px(6f)
         val startPadding = dp2px(6f)
         val spaceTotalWidth = spaceWidth * (provinces[0].size + 1)
@@ -349,7 +348,7 @@ class PlateDialog(
      * Keyboard with letters
      */
     private fun letterKeyboard() {
-        val width = getScreenWidth()
+        val (width, _) = context.getScreenWidthAndHeight()
         val spaceWidth = dp2px(6f)
         val startPadding = dp2px(6f)
         val spaceTotalWidth = spaceWidth * (letters[0].size + 1)
@@ -420,17 +419,6 @@ class PlateDialog(
         return textView
     }
 
-    private fun getScreenWidth(): Int {
-        val wm = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
-        val point = Point()
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            wm.defaultDisplay.getRealSize(point)
-        } else {
-            wm.defaultDisplay.getSize(point)
-        }
-        return point.x
-    }
-
     private fun dp2px(dpValue: Float): Int {
         val scale = Resources.getSystem().displayMetrics.density
         return (dpValue * scale + 0.5f).toInt()
@@ -457,7 +445,7 @@ class PlateDialog(
     fun getData() = getContentText()
 
     private var onConfirmClickListener: ((data: String) -> Unit)? = null
-    fun setOnConfirmClickListener(listener: (data: String) -> Unit): PlateDialog {
+    fun setOnConfirmClickListener(listener: ((data: String) -> Unit)?): PlateDialog {
         onConfirmClickListener = listener
         return this
     }
@@ -469,8 +457,8 @@ class PlateDialog(
     /**
      * You can set multiple properties and open dialog in this way
      */
-    inline fun show(func: PlateDialog.() -> Unit): PlateDialog = apply {
-        this.func()
+    inline fun show(block: PlateDialog.() -> Unit): PlateDialog = apply {
+        this.block()
         this.show()
     }
 

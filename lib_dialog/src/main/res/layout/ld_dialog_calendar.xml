@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/ld_colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorPrimary"
+        android:paddingTop="@dimen/ld_dp_10"
+        android:paddingBottom="@dimen/ld_dp_10"
+        android:paddingStart="@dimen/ld_dp_20"
+        android:paddingEnd="@dimen/ld_dp_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ld_colorText3"
+            android:textSize="@dimen/ld_sp_14"
+            tools:text="2023年"/>
+
+        <TextView
+            android:id="@+id/tv_month_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ld_colorWhite"
+            android:textSize="@dimen/ld_sp_32"
+            tools:text="3月30日"/>
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ld_dp_16"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/ld_dp_1"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ld_dp_10"
+            android:textColor="?android:attr/colorPrimary"
+            android:textSize="@dimen/ld_sp_14"
+            android:text="取消"/>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ld_dp_10"
+            android:layout_marginStart="@dimen/ld_dp_16"
+            android:textColor="?android:attr/colorPrimary"
+            android:textSize="@dimen/ld_sp_14"
+            android:text="确定"/>
+    </LinearLayout>
+
+</LinearLayout>

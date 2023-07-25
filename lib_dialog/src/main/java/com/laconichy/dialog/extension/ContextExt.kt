@@ -13,7 +13,7 @@ import java.lang.ref.WeakReference
  * </pre>
  */
 
-fun Context?.toActivity(): Activity? {
+internal fun Context?.toActivity(): Activity? {
     val activity = toActivityByInner()
     return if (activity.isAlive()) activity else null
 }
@@ -52,4 +52,4 @@ private fun Context?.toActivityFromDecor(): Activity? {
     return null
 }
 
-fun Context?.isAlive(): Boolean = toActivity().isAlive()
+internal fun Context?.isAlive(): Boolean = toActivity().isAlive()

@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="@dimen/ld_dp_16"
+    android:paddingEnd="@dimen/ld_dp_16"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -13,5 +15,12 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="PlateDialog"/>
+
+    <Button
+        android:id="@+id/bt_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="CalendarDialog"/>
 
 </LinearLayout>

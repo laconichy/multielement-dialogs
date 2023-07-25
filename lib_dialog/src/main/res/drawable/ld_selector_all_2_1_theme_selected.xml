@@ -4,9 +4,9 @@
     <item android:state_selected="true">
         <shape>
             <corners
-                android:radius="@dimen/dp_2" />
+                android:radius="@dimen/ld_dp_2" />
             <stroke
-                android:width="@dimen/dp_1"
+                android:width="@dimen/ld_dp_1"
                 android:color="?android:attr/colorPrimary"/>
         </shape>
     </item>
@@ -14,9 +14,9 @@
     <item android:state_selected="false">
         <shape>
             <corners
-                android:radius="@dimen/dp_2" />
+                android:radius="@dimen/ld_dp_2" />
             <stroke
-                android:width="@dimen/dp_1"
+                android:width="@dimen/ld_dp_1"
                 android:color="@color/ld_colorDDDFE7"/>
         </shape>
     </item>

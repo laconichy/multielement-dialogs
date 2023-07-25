@@ -10,4 +10,4 @@ import android.app.Activity
  * </pre>
  */
 
-fun Activity?.isAlive(): Boolean = this?.let { !isFinishing && !isDestroyed } ?: false
+internal fun Activity?.isAlive(): Boolean = this?.let { !isFinishing && !isDestroyed } ?: false
