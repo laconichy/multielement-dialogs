@@ -68,5 +68,5 @@ Step 2. Add the dependency
 ## Version Log:
 ### 1.0.0（2023-7-21）：
 1、add PlateDialog
-### 1.0.1（2023-7-25）：
+### 1.1.0（2023-7-25）：
 1、add CalendarDialog
