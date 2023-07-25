@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity() {
 
     var date: String = "2023-7-24"
     private fun showCalendarDialog() {
+        // example 1
         CalendarDialog(this).show {
             setDate(date)
             setOnConfirmClickListener { calendar, yearOfMonthOfDay ->
@@ -63,6 +64,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        // example 2
 //        CalendarDialog(this, "yyyy/MM/dd").show {
 //            setDate(date)
 //            setOnConfirmClickListener { calendar, yearOfMonthOfDay ->

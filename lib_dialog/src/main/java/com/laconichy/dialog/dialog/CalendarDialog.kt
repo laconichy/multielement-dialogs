@@ -126,6 +126,11 @@ class CalendarDialog(
         return this
     }
 
+    /**
+     * You can use it to set properties
+     */
+    fun getCalendarView() = calendar_view
+
     private var onConfirmClickListener: ((calendar: Calendar, yearOfMonthOfDay: String) -> Unit)? = null
 
     /**
