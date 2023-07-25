@@ -2,6 +2,8 @@
 Direct to use, multiple, smooth, can be applied to Kotlin &amp; Android.
 Under continuous development...
 
+### Release Version:![](https://jitpack.io/v/laconichy/multielement-dialogs.svg)
+
 ## PlateDialog
 ### images
 ![](images/demo_plate_provinces_keyboard.png) ![](images/demo_plate_letter_keyboard.png)
@@ -61,7 +63,7 @@ Step 1：Add it in your root build.gradle or setting.gradle at the end of reposi
 Step 2. Add the dependency
 ```gradle
     dependencies {
-	    implementation 'com.github.laconichy:multielement-dialogs:1.0.0'
+	    implementation 'com.github.laconichy:multielement-dialogs:1.1.0'
 	}
 ```
 
