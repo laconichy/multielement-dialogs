@@ -1,19 +1,18 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    namespace 'com.laconichy.multielementdialogs'
+    namespace 'com.laconichy.auto'
     compileSdk 33
 
     defaultConfig {
-        applicationId rootProject.ext.android.applicationId
-        minSdk rootProject.ext.android.minSdk
-        targetSdk rootProject.ext.android.targetSdk
-        versionCode rootProject.ext.android.versionCode
-        versionName rootProject.ext.android.versionName
+        minSdk 21
+        targetSdk 33
 
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -36,8 +35,4 @@ dependencies {
     implementation rootProject.ext.dependencies['core-ktx']
     implementation rootProject.ext.dependencies.appcompat
     implementation rootProject.ext.dependencies.material
-    implementation rootProject.ext.dependencies.constraintlayout
-
-    implementation project(':lib_dialog')
-    implementation project(':lib_auto')
 }

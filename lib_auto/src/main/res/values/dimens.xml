@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <dimen name="ld_dp_0">0dp</dimen>-->
+    <dimen name="auto_dp_12">12.0dp</dimen>
+    <dimen name="auto_dp_14">14.0dp</dimen>
+
+
+    <dimen name="auto_sp_14">14sp</dimen>
+
+</resources>

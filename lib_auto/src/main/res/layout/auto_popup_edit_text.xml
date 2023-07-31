@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/state_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/auto_colorText3">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/auto_item_popup_edit_text"/>
+
+    <LinearLayout
+        android:id="@+id/ll_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_state_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/auto_dp_12"
+            android:paddingBottom="@dimen/auto_dp_12"
+            android:paddingStart="@dimen/auto_dp_12"
+            android:paddingEnd="@dimen/auto_dp_12"
+            android:textSize="@dimen/auto_sp_14"
+            android:textColor="@color/auto_colorText2"
+            android:gravity="center"
+            tools:text="内容"/>
+    </LinearLayout>
+
+
+
+</FrameLayout>

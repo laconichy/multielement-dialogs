@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="auto_colorWhite">#FFFFFF</color>
+
+    <color name="auto_colorText">#2F313D</color>
+    <color name="auto_colorText2">#9D9FA8</color>
+    <color name="auto_colorText3">#BFC0C8</color>
+    <color name="auto_colorDDDFE7">#DDDFE7</color>
+    <color name="auto_colorBlock">#F2F2F4</color>
+    <color name="auto_colorLine">#DDDFE7</color>
+</resources>

@@ -1,9 +1,10 @@
 package com.laconichy.multielementdialogs
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.laconichy.dialog.dialog.CalendarDialog
 import com.laconichy.dialog.dialog.PlateDialog
 
@@ -11,6 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var bt_plate: Button
     private lateinit var bt_calendar: Button
+    private lateinit var bt_auto_complete_et: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     private fun initViews() {
         bt_plate = findViewById(R.id.bt_plate)
         bt_calendar = findViewById(R.id.bt_calendar)
+        bt_auto_complete_et = findViewById(R.id.bt_auto_complete_et)
     }
 
     private fun initListeners() {
@@ -32,6 +35,10 @@ class MainActivity : AppCompatActivity() {
 
         bt_calendar.setOnClickListener {
             showCalendarDialog()
+        }
+
+        bt_auto_complete_et.setOnClickListener {
+            startActivity(Intent(this, TestAutoCompleteEtActivity::class.java))
         }
     }
 
